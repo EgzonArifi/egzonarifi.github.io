@@ -1,11 +1,11 @@
 {
-  "main.js": "/EgzonArifi/egzonarifi.github.io/static/js/main.23fcb51b.chunk.js",
-  "main.js.map": "/EgzonArifi/egzonarifi.github.io/static/js/main.23fcb51b.chunk.js.map",
-  "runtime~main.js": "/EgzonArifi/egzonarifi.github.io/static/js/runtime~main.a016d43c.js",
-  "runtime~main.js.map": "/EgzonArifi/egzonarifi.github.io/static/js/runtime~main.a016d43c.js.map",
-  "static/js/2.65f666d0.chunk.js": "/EgzonArifi/egzonarifi.github.io/static/js/2.65f666d0.chunk.js",
-  "static/js/2.65f666d0.chunk.js.map": "/EgzonArifi/egzonarifi.github.io/static/js/2.65f666d0.chunk.js.map",
-  "index.html": "/EgzonArifi/egzonarifi.github.io/index.html",
-  "precache-manifest.0390c8640764c6e5e1ae621502acd7ab.js": "/EgzonArifi/egzonarifi.github.io/precache-manifest.0390c8640764c6e5e1ae621502acd7ab.js",
-  "service-worker.js": "/EgzonArifi/egzonarifi.github.io/service-worker.js"
+  "main.js": "/static/js/main.7ea1fac7.chunk.js",
+  "main.js.map": "/static/js/main.7ea1fac7.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.c5541365.js",
+  "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
+  "static/js/2.2d594182.chunk.js": "/static/js/2.2d594182.chunk.js",
+  "static/js/2.2d594182.chunk.js.map": "/static/js/2.2d594182.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.59e413e7dc7820dc1fa5b6fea17950cd.js": "/precache-manifest.59e413e7dc7820dc1fa5b6fea17950cd.js",
+  "service-worker.js": "/service-worker.js"
 }

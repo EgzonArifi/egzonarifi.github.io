@@ -2,7 +2,6 @@
   "name": "egzonarifi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/EgzonArifi/egzonarifi.github.io",
   "dependencies": {
     "firebase": "^5.8.6",
     "gh-pages": "^2.0.1",
