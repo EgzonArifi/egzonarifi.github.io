@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { createProject } from "../../store/actions/projectActions";
 
 class CreateProject extends Component {
   state = {
     title: "",
-    content: "",
-    file: null
+    content: ""
   };
 
   handleChange = e => {
@@ -13,15 +14,10 @@ class CreateProject extends Component {
     });
   };
 
-  handleFileChange(event) {
-    this.setState({
-      file: URL.createObjectURL(event.target.files[0])
-    });
-  }
-
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
+    this.props.createProject(this.state);
+    //console.log(this.state);
   };
 
   render() {
@@ -31,7 +27,7 @@ class CreateProject extends Component {
           <h5 className="grey-text text-darken-3">Create Project</h5>
           <div className="input-field">
             <label htmlFor="text">Title</label>
-            <input type="text" id="title" onChange={this.handleFileChange} />
+            <input type="text" id="title" onChange={this.handleChange} />
           </div>
           <div className="input-field">
             <label htmlFor="password">Project Content</label>
@@ -46,12 +42,7 @@ class CreateProject extends Component {
           <div className="file-field input-field">
             <div className="btn">
               <span>Upload Image</span>
-              <input
-                type="file"
-                multiple
-                onChange={event => this.handleFileChange(event)}
-              />
-              <img width="30" height="30" src={this.state.file} />
+              <input type="file" multiple />
             </div>
             <div className="file-path-wrapper">
               <input
@@ -70,4 +61,13 @@ class CreateProject extends Component {
   }
 }
 
-export default CreateProject;
+const mapDispatchToProps = dispatch => {
+  return {
+    createProject: project => dispatch(createProject(project))
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(CreateProject);
