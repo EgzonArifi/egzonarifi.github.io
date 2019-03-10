@@ -1,11 +1,16 @@
 import React from "react";
+import moment from "moment";
 
 const ProjectSummary = ({ project }) => (
   <div className="card z-depth.0 project-summary">
     <div className="card-content grey-text text-darken-2">
       <span className="card-title">{project.title}</span>
-      <p>Posted by Egzon Arifi</p>
-      <p className="grey-text">10th March 2019</p>
+      <p>
+        Posted by {project.authorFirstName} {project.authorLastName}
+      </p>
+      <p className="grey-text">
+        {moment(project.createdAt.toDate()).calendar()}
+      </p>
     </div>
   </div>
 );
