@@ -8,7 +8,7 @@ export const createProject = project => {
         ...project,
         authorFirstName: "Egzon",
         authorLastName: "Arifi",
-        authorId: 123,
+        authorId: "FptgJ1ybQjW7Nx2h1u8UaOw16yi1",
         createdAt: new Date()
       })
       .then(() => {
