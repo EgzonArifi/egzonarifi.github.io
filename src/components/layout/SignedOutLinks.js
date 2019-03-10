@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const SigneOutLinks = ({ children, style, ...rest }) => (
+const SignedOutLinks = ({ children, style, ...rest }) => (
   <ul className="right">
     <li>
       <NavLink to="/">Sign In</NavLink>
@@ -9,4 +9,4 @@ const SigneOutLinks = ({ children, style, ...rest }) => (
   </ul>
 );
 
-export default SigneOutLinks;
+export default SignedOutLinks;
