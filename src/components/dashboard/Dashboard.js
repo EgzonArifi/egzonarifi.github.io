@@ -18,7 +18,6 @@ class Dashboard extends Component {
 
     return (
       <div className="dashboard container">
-      <a href="stucard://">Deep Link</a>
         <div className="row">
           <div className="col s12">
             <ProjectList projects={projects} />
